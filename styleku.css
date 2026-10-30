@@ -1,0 +1,162 @@
+
+/* 1. Tampilan dasar seluruh halaman */
+body {
+    background-color: #f5f2dc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+/* 2. Bagian judul dan kutipan */
+#header {
+    background-color: #d8bd82;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #c4a15c;
+}
+
+#header h1 {
+    color: blue;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#soekarno {
+    font-weight: bold;
+    color: #8b4513;
+}
+
+/* 3. Menu navigasi */
+body > div:nth-of-type(2) {
+    background-color: #e4d8ae;
+    padding: 5px;
+}
+
+body > div:nth-of-type(2) ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #174ea6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* 4. Gambar utama */
+.gambar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gambar img {
+    width: 23%;
+    max-width: 300px;
+    height: auto;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+/* 5. Isi artikel */
+.isi {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.isi p {
+    margin-bottom: 15px;
+}
+
+.jawa {
+    color: blue;
+    font-weight: bold;
+}
+
+/* 6. Profil dan budidaya */
+#profil,
+#beternak {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #fffdf3;
+    border: 1px solid #d6c99e;
+}
+
+#profil h3,
+#beternak h3 {
+    color: #174ea6;
+    border-bottom: 2px solid #c4a15c;
+    padding-bottom: 5px;
+}
+
+/* 7. Galeri koleksi burung */
+.koleksi {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.koleksi img {
+    width: 23%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* 8. Bagian promosi */
+.promo {
+    background-color: #d8bd82;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.promo h2 {
+    color: blue;
+}
+
+.promo h3 {
+    color: #9b2828;
+}
+
+.promo h4 {
+    color: #333;
+}
+
+#Wa {
+    color: green;
+    font-weight: bold;
+}
+
+/* 9. Daftar toko online */
+.promo ol {
+    display: inline-block;
+    text-align: left;
+}
+
+/* 10. Tampilan pada HP */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    #header h1 {
+        font-size: 22px;
+    }
+
+    .gambar img,
+    .koleksi img {
+        width: 45%;
+    }
+
+    body > div:nth-of-type(2) ul {
+        gap: 15px;
+    }
+}
